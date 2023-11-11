@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 09 - HTML Forms</title>
+</head>
+<body>
+    <h1>Marcus Aurelius and Stoicism</h1>
+
+    <form method="post" action="#">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="age">Phone Number:</label>
+        <input type="text" id="age" name="age" required><br>
+
+        <fieldset>
+            <legend>Stoic Practices:</legend>
+            <input type="checkbox" id="meditation" name="meditation">
+            <label for="meditation">Meditation</label><br>
+
+            <input type="checkbox" id="journaling" name="journaling">
+            <label for="journaling">Journaling</label><br>
+
+            <input type="checkbox" id="mindfulness" name="mindfulness">
+            <label for="mindfulness">Mindfulness</label><br>
+
+            <input type="checkbox" id="stoicexercise" name="stoicexercise">
+            <label for="stoicexercise">Stoic Exercises</label><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Favorite Stoic Quotes:</legend>
+            <input type="radio" id="quote1" name="favoriteQuote" value="quote1">
+            <label for="quote1">"The best revenge is to be unlike him who performed the injustice." - Marcus Aurelius</label><br>
+
+            <input type="radio" id="quote2" name="favoriteQuote" value="quote2">
+            <label for="quote2">"Very little is needed to make a happy life; it is all within yourself, in your way of thinking." - Marcus Aurelius</label><br>
+
+            <input type="radio" id="quote3" name="favoriteQuote" value="quote3">
+            <label for="quote3">"He who fears death either fears the loss of sensation or a different kind of sensation. But if you shall have no sensation, neither will you feel any harm; and if you will acquire another kind of sensation, you will be a different kind of living being and not one, therefore, which perishes." - Marcus Aurelius</label><br>
+
+            <input type="radio" id="quote4" name="favoriteQuote" value="quote4">
+            <label for="quote4">"It is not that we have a short time to live, but that we waste much of it." - Seneca</label><br>
+        </fieldset>
+
+        <label for="comments">What got you into Stoicism:</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br>
+
+        <input type="submit" value="Submit Feedback">
+    </form>
+</body>
+</html>
